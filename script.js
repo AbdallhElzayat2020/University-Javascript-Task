@@ -99,6 +99,25 @@ elementPragraph.style.fontFamily = 'arial';
 elementPragraph.style.fontWeight = 'bold';
 elementPragraph.style.padding = '20px';
 
+// to add class
+// elementPragraph.classList.add('paragraph_class-from-js', 'highlightClass', 'highlightBorader');
 
-elementPragraph.classList.add('paragraph_class-from-js');
+// to add class if not exist or remove if exist
+// elementPragraph.classList.toggle('paragraph_class');
 
+// to remove class
+// elementPragraph.classList.highlightBorader('paragraph_class');
+
+// to check if class exist and contains it 
+
+// let result = elementPragraph.contains('paragraph_class');
+
+
+// print it on the page
+// document.write('result:' = `${result}`);
+
+// elementPragraph.className = 'bg-dark';
+
+let elementStyle = window.getComputedStyle(elementPragraph);
+
+// console.log(elementStyle);
