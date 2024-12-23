@@ -110,14 +110,37 @@ elementPragraph.style.padding = '20px';
 
 // to check if class exist and contains it 
 
-// let result = elementPragraph.contains('paragraph_class');
+let result = elementPragraph.contains('paragraph_class');
 
 
 // print it on the page
-// document.write('result:' = `${result}`);
+document.write('result:' = `${result}`);
 
-// elementPragraph.className = 'bg-dark';
+elementPragraph.className = 'bg-dark';
 
 let elementStyle = window.getComputedStyle(elementPragraph);
 
-// console.log(elementStyle);
+console.log(elementStyle);
+
+
+
+// first ekeemnt child ==  first node child
+elementPragraph.setAttribute('id', 'paragraph_id');
+elementPragraph.setAttribute('class', 'paragraph_class');
+
+
+elementPragraph.parentElement.parentNode.removeChild(elementPragraph.parentElement);
+
+
+element.click = function () {
+    alert('Element clicked');
+}
+
+element.click = function () {
+    alert('Element clicked');
+}
+
+
+// btn.addEventListener('click', function () {
+
+// });
